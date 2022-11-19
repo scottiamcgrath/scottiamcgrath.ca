@@ -1,0 +1,2 @@
+# scottiemcgrath.ai
+My website
