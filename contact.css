@@ -10,14 +10,16 @@ body {
 
 header {
     background-color: #6c5671;
-    padding: 5px 20px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
 }
 
 button {
     background-color: #feaae4;
     font-family: Lexend, Arial;
     border: 4px outset #feaae4;
-    margin: 5px 5px 0px 5px;
+    margin: 5px;
 }
 
 button:hover {
@@ -28,6 +30,29 @@ button:hover {
 .active-button {
     background-color: #fff7a0;
     border: 4px outset #fff7a0;
+}
+
+.icon-button {
+    background-color: #6c5671;
+    border: 0px;
+    padding: 0px;
+    height: 50px;
+}
+
+.icon-button:hover {
+    background-color: #6c5671;
+    border: 0px outset #6c5671;
+    padding: 1px;
+}
+.nav-icon {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.header-text {
+    margin: 0px;
+    padding: 2px 0px 0px 4px;
 }
 
 main {
