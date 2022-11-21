@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", init);
+var root = document.location.hostname
 
 function init(){
-    $("#header").load("header.html")
+    $("#header").load(root+"header.html")
 }
