@@ -4,47 +4,14 @@
         <title>Scottie McGrath</title>
         <link rel="icon" href="icon16.png" type="image/x-icon">
         <link rel="stylesheet" href="standard.css">
+        <link rel="stylesheet" href="current-state-of-ai.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <button 
-                class="icon-button"
-                onClick="location.href='http://scottiemcgrath.ai'"
-            >
-                <img src="icon.svg" class="nav-icon">
-            </button>
-            <div class="nav-bar">
-                <p class="header-text">
-                    Scottie McGrath's hopefully helpfull website to stave off human extinction
-                </p>
-                <nav class="nav-header">
-                    <button onClick="location.href='http://scottiemcgrath.ai/usefull-resources'">
-                        Usefull Resources
-                    </button>
-                    <button 
-                        class="active-button"
-                        onClick="location.href='http://scottiemcgrath.ai/current-state-of-ai'"
-                    >
-                        Current State of AI
-                    </button>
-                    <button onClick="location.href='http://scottiemcgrath.ai/ai-safety-textbook'">
-                        AI Safety Textbook
-                    </button>
-                    <button onClick="location.href='http://scottiemcgrath.ai/blog'">
-                        Blog
-                    </button>
-                    <button onClick="location.href='http://scottiemcgrath.ai/about'">
-                        About
-                    </button>
-                    <button onClick="location.href='http://scottiemcgrath.ai/contact'">
-                        Contact
-                    </button>
-                </nav>
-            </div>
+        <header id="header">
         </header>
         <main>
             <center>
@@ -54,4 +21,6 @@
             </center>
         </main>
     </body>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="load-header.js"></script>
 </html>
