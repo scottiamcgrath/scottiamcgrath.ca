@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Lexend";
+    src: url(sitewide-resources/Lexend-Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Lexend";
+    src: url(sitewide-resources/Lexend-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
 html {
     font-family: Lexend, Arial;
     margin: 0;
