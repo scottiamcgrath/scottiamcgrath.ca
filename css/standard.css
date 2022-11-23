@@ -1,271 +1,67 @@
-@media (min-width: 341px) and (max-width: 397px) {
-    
-    html {
-        font-family: Lexend, Arial;
-        margin: 0;
-        padding: 0;
-        background-color: #28282e;
-    }
-    body {
-        background-color: #ffe6c6;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 1000px;
-    }
-    body:hover {
-        cursor: default;
-    }
-    header {
-        background-color: #6c5671;
-        display: grid;
-        grid-template-columns: 0px 1fr;
-        height: 59px;
-        overflow: hidden;
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-    .header-right {
-        display: grid;
-        grid-template-rows: 0px 30px 30px;
-    }
-    .header-right-bottom {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    .header-text {
-        margin: 0px;
-        color: #6c5671;
-    }
-    button {
-        background-color: #feaae4;
-        font-family: Lexend, Arial;
-        color: black;
-        margin-bottom: 5px;
-        border: 2px solid #feaae4;
-        height: 22px;
-    }
-    .icon-button {
-        background-color: #6c5671;
-        margin: 0px;
-        border: 0px;
-        padding: 5px;
-        height: 60px;
-        width: 60px;
-    }
-    button:hover {
-        border: 2px solid #fff7a0;
-        cursor: pointer;
-    }
-    .icon-button:hover {
-        display: none;
-        border: 2px solid #6c5671;
-        cursor: pointer;
-    }
-    .nav-icon {
-        display: none;
-        height: 100%;
-        width: 100%;
-    }
-}
-@media (min-width: 397px) and (max-width: 675px) {
-    .size-guide {
-        border: 1px solid red;
-        width: 379px;
-    }
-    html {
-        font-family: Lexend, Arial;
-        margin: 0;
-        padding: 0;
-        background-color: #28282e;
-    }
-    body {
-        background-color: #ffe6c6;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 1000px;
-    }
-    body:hover {
-        cursor: default;
-    }
-    header {
-        background-color: #6c5671;
-        display: grid;
-        grid-template-columns: 60px 1fr;
-        height: 60px;
-        padding-right: 5px;
-    }
-    .header-right {
-        display: grid;
-        grid-template-rows: 0px 30px 30px;
-    }
-    .header-right-bottom {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    .header-text {
-        margin: 0px;
-        color: #6c5671;
-    }
-    button {
-        background-color: #feaae4;
-        font-family: Lexend, Arial;
-        color: black;
-        margin-bottom: 5px;
-        border: 2px solid #feaae4;
-        height: 22px;
-    }
-    .icon-button {
-        background-color: #6c5671;
-        margin: 0px;
-        border: 0px;
-        padding: 5px;
-        height: 60px;
-        width: 60px;
-    }
-    button:hover {
-        border: 2px solid #fff7a0;
-        cursor: pointer;
-    }
-    .icon-button:hover {
-        border: 2px solid #6c5671;
-        cursor: pointer;
-    }
-    .nav-icon {
-        height: 100%;
-        width: 100%;
-    }
-}
-@media (min-width: 675px) and (max-width: 768px) {
-    html {
-        font-family: Lexend, Arial;
-        margin: 0;
-        padding: 0;
-        background-color: #28282e;
-    }
-    body {
-        background-color: #ffe6c6;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 1000px;
-    }
-    body:hover {
-        cursor: default;
-    }
-    header {
-        background-color: #6c5671;
-        display: grid;
-        grid-template-columns: 60px 1fr;
-        height: 60px;
-    }
-    .header-right {
-        display: grid;
-        grid-template-rows: 26px 34px;
-    }
-    .header-right-bottom {
-        padding-top: 3px;
-        padding-bottom: 5px;
-    }
-    .header-text {
-        margin: 0px;
-        color: white;
-        padding-top: 5px;
-        padding-bottom: 2px;
-    }
-    button {
-        background-color: #feaae4;
-        font-family: Lexend, Arial;
-        color: black;
-        border: 2px solid #feaae4;
-        height: 24px;
-    }
-    .icon-button {
-        background-color: #6c5671;
-        margin: 0px;
-        border: 0px;
-        padding: 5px;
-        height: 60px;
-        width: 60px;
-    }
-    button:hover {
-        border: 2px solid #fff7a0;
-        cursor: pointer;
-    }
-    .icon-button:hover {
-        border: 2px solid #6c5671;
-        cursor: pointer;
-    }
-    .nav-icon {
-        height: 100%;
-        width: 100%;
-    }
-}
-@media (min-width: 768px) {
-    html {
-        font-family: Lexend, Arial;
-        margin: 0;
-        padding: 0;
-        background-color: #28282e;
-    }
-    body {
-        background-color: #ffe6c6;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 768px;
-        padding-bottom: 1000px;
-    }
-    body:hover {
-        cursor: default;
-    }
-    header {
-        background-color: #6c5671;
-        display: grid;
-        grid-template-columns: 60px 1fr;
-        height: 60px;
 
+@media (min-width: 48em) {
+    html {
+        font-family: Lexend, Arial;
+        margin: 0;
+        padding: 0;
+        background-color: #28282e;
+    }
+    body {
+        background-color: #ffe6c6;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 48em;
+        padding-bottom: 62em;
+    }
+    body:hover {
+        cursor: default;
+    }
+    header {
+        background-color: #6c5671;
+        display: grid;
+        grid-template-columns: 3em 1fr;
+        padding: 0.2em 1em;
     }
     .header-right {
         display: grid;
-        grid-template-rows: 26px 34px;
+        grid-template-rows: 1.5em 1.5em;
+        margin-left: 1em;
     }
     .header-right-bottom {
-        padding-top: 3px;
-        padding-bottom: 5px;
     }
     .header-text {
         margin: 0px;
         color: white;
-        padding-top: 5px;
-        padding-bottom: 2px;
     }
     button {
         background-color: #feaae4;
         font-family: Lexend, Arial;
         color: black;
-        border: 2px solid #feaae4;
-        height: 24px;
+        border: 0.15em solid #feaae4;
+        height: 1.75em;
     }
     .icon-button {
         background-color: #6c5671;
         margin: 0px;
         border: 0px;
-        padding: 5px;
-        height: 60px;
-        width: 60px;
+        padding: 0px;
+        height: 100%;
     }
     button:hover {
-        border: 2px solid #fff7a0;
+        border: 0.15em solid #fff7a0;
         cursor: pointer;
     }
     .icon-button:hover {
-        border: 2px solid #6c5671;
+        border: 0em solid #6c5671;
         cursor: pointer;
     }
     .nav-icon {
         height: 100%;
         width: 100%;
+    }
+    main {
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
