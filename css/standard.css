@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Lexend";
-    src: url(sitewide-resources/Lexend-Regular.ttf) format("truetype");
+    src: url(/sitewide-resources/Lexend-Regular.ttf) format("truetype");
     font-weight: normal;
 }
 @font-face {
     font-family: "Lexend";
-    src: url(sitewide-resources/Lexend-Bold.ttf) format("truetype");
+    src: url(/sitewide-resources/Lexend-Bold.ttf) format("truetype");
     font-weight: bold;
 }
 
 html {
-    font-family: Lexend, Arial;
+    font-family: Lexend, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #28282e;
@@ -34,7 +34,7 @@ header {
 }
 button {
     background-color: #feaae4;
-    font-family: Lexend, Arial;
+    font-family: Lexend, Arial, sans-serif;
     color: black;
 }
 .icon-button {
