@@ -1,24 +1,119 @@
-
-@media (min-width: 48em) {
-    html {
-        font-family: Lexend, Arial;
-        margin: 0;
-        padding: 0;
-        background-color: #28282e;
-    }
+html {
+    font-family: Lexend, Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #28282e;
+}
+body {
+    background-color: #ffe6c6;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 62em;
+}
+body:hover {
+    cursor: default;
+}
+header {
+    background-color: #6c5671;
+}
+.header-text {
+    margin: 0px;
+    color: white;
+}
+button {
+    background-color: #feaae4;
+    font-family: Lexend, Arial;
+    color: black;
+}
+.icon-button {
+    background-color: #6c5671;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    height: 100%;
+}
+button:hover {
+    cursor: pointer;
+}
+.icon-button:hover {
+    border: 0em solid #6c5671;
+    cursor: pointer;
+}
+.nav-icon {
+    height: 100%;
+    width: 100%;
+}
+hr {
+    border: 0.001em solid #6c5671;
+}
+@media (max-width: 26.81em) {
     body {
-        background-color: #ffe6c6;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 48em;
-        padding-bottom: 62em;
-    }
-    body:hover {
-        cursor: default;
+        width: 100%;
     }
     header {
-        background-color: #6c5671;
+        display: grid;
+        grid-template-columns: 1fr 0em;
+        padding: 0.2em 1em;
+    }
+    .header-text {
+        Display: none;
+    }
+    .header-right {
+        display: none;
+    }
+    button {
+        border: 0.15em solid #feaae4;
+        height: 1.63em;
+        margin-bottom: 0.3em;
+    }
+    .icon-button {
+        height: 3.85em;
+    }
+    button:hover {
+        border: 0.15em solid #fff7a0;
+    }
+    main {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+@media (min-width: 26.81em) and (max-width: 42.76em) {
+    body {
+        width: 100%;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 3em 1fr;
+        padding: 0.2em 1em;
+    }
+    .header-text {
+        Display: none;
+    }
+    .header-right {
+        display: grid;
+        grid-template-rows: 0em 1.5em;
+        margin-left: 1em;
+        margin-top: 0.1em;
+    }
+    button {
+        border: 0.15em solid #feaae4;
+        height: 1.63em;
+        margin-bottom: 0.3em;
+    }
+    button:hover {
+        border: 0.15em solid #fff7a0;
+    }
+    main {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+@media (min-width: 42.76em) and (max-width: 49em) {
+    body {
+        width: 100%;
+    }
+    header {
         display: grid;
         grid-template-columns: 3em 1fr;
         padding: 0.2em 1em;
@@ -28,35 +123,38 @@
         grid-template-rows: 1.5em 1.5em;
         margin-left: 1em;
     }
-    .header-text {
-        margin: 0px;
-        color: white;
-    }
     button {
-        background-color: #feaae4;
-        font-family: Lexend, Arial;
-        color: black;
         border: 0.15em solid #feaae4;
         height: 1.75em;
     }
-    .icon-button {
-        background-color: #6c5671;
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
-        height: 100%;
+    button:hover {
+        border: 0.15em solid #fff7a0;
+    }
+    main {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+@media (min-width: 49em) {
+    body {
+        width: 48em;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 3em 1fr;
+        padding: 0.2em 1em;
+    }
+    .header-right {
+        display: grid;
+        grid-template-rows: 1.5em 1.5em;
+        margin-left: 1em;
+    }
+    button {
+        border: 0.15em solid #feaae4;
+        height: 1.75em;
     }
     button:hover {
         border: 0.15em solid #fff7a0;
-        cursor: pointer;
-    }
-    .icon-button:hover {
-        border: 0em solid #6c5671;
-        cursor: pointer;
-    }
-    .nav-icon {
-        height: 100%;
-        width: 100%;
     }
     main {
         padding-left: 1em;
