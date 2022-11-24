@@ -139,7 +139,7 @@ hr {
         padding-right: 1rem;
     }
     .big-logo {
-        width: 20rem;
+        width: 12rem;
     }
 }
 @media only screen and (min-width: 25.16rem) and (max-width: 40.26rem) {
@@ -173,7 +173,7 @@ hr {
         padding-right: 1rem;
     }
     .big-logo {
-        width: 20rem;
+        width: 14.67rem;
     }
 }
 @media only screen and (min-width: 40.26rem) and (max-width: 54rem) {
@@ -203,7 +203,7 @@ hr {
         padding-right: 1rem;
     }
     .big-logo {
-        width: 20rem;
+        width: 17.33rem;
     }
 }
 @media only screen and (min-width: 54rem) {
