@@ -210,3 +210,79 @@ hr {
         width: 20rem;
     }
 }
+/* iPhones */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3),
+    only screen
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3),
+    only screen
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3),
+    only screen
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2),
+    only screen
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3),
+    only screen
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        body {
+            width: 100%;
+        }
+        header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0.2rem 1rem;
+        }
+        .header-text {
+            Display: none;
+        }
+        .header-right {
+            display: none;
+        }
+        button {
+            border: 0rem solid #6c5671;
+            height: 1.33rem;
+            margin-bottom: 0.3rem;
+        }
+        .menu-button {
+            display: block;
+            height: 3.2rem;
+            width: 3.2rem;
+            background-color: #6c5671;
+            padding: 0;
+            margin: auto;
+        }
+        .menu-icon {
+            display: inline;
+            height: 100%;
+            width: 100%;
+        }
+        .menu-button:hover {
+            border: 0rem;
+        }
+        .icon-button {
+            height: 3.2rem;
+            width: 3.2rem;
+            margin: auto;
+        }
+        button:hover {
+            border: 0.15rem solid #fff7a0;
+        }
+        main {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .big-logo {
+            width: 10rem;
+        }
+    }
