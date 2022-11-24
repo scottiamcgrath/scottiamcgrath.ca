@@ -24,6 +24,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 60rem;
+    animation-duration: 0.001s;
 }
 body:hover {
     cursor: default;
@@ -65,6 +66,9 @@ button:hover {
 .menu-icon {
     display: none;
 }
+.under-header {
+    display: none;
+}
 li {
     margin-bottom: 0.4rem;
 }
@@ -81,6 +85,7 @@ hr {
 @media only screen and (max-width: 25.16rem) {
     body {
         width: 100%;
+        animation-name: menu-header;
     }
     header {
         display: grid;
@@ -93,6 +98,14 @@ hr {
         grid-template-rows: 1.5rem 1.5rem;
         margin-left: 1rem;
     }
+    button {
+        border: 0.15rem solid #feaae4;
+        margin: auto;
+        margin-bottom: 0.2rem;
+    }
+    button:hover {
+        border: 0.15rem solid #fff7a0;
+    }
     .menu-button {
         display: block;
         background-color: #6c5671;
@@ -100,7 +113,8 @@ hr {
         border: 0px;
         padding: 0px;
         height: 3.15rem;
-        margin: auto
+        margin: auto;
+        margin-bottom: 0;
     }
     .menu-icon {
         display: inline;
@@ -109,10 +123,16 @@ hr {
     }
     .menu-button:hover {
         cursor: pointer;
+        border: 0;
     }
     .icon-button {
         margin: auto;
         height: 3.15rem;
+        margin-bottom: 0;
+    }
+    .under-header {
+        background-color: #6c5671;
+        display: grid;
     }
     main {
         padding-left: 1rem;
@@ -125,6 +145,7 @@ hr {
 @media only screen and (min-width: 25.16rem) and (max-width: 40.26rem) {
     body {
         width: 100%;
+        animation-name: normal-header;
     }
     header {
         display: grid;
@@ -158,6 +179,7 @@ hr {
 @media only screen and (min-width: 40.26rem) and (max-width: 54rem) {
     body {
         width: 100%;
+        animation-name: normal-header;
     }
     header {
         display: grid;
@@ -187,6 +209,7 @@ hr {
 @media only screen and (min-width: 54rem) {
     body {
         width: 54rem;
+        animation-name: normal-header;
     }
     header {
         display: grid;
@@ -217,6 +240,7 @@ hr {
 @media only screen and (max-device-width: 500px) {
     body {
         width: 100%;
+        animation-name: menu-header;
     }
     header {
         display: grid;
@@ -257,4 +281,12 @@ hr {
     .big-logo {
         width: 20rem;
     }
+}
+@keyframes normal-header {
+    from { clip: rect(1px, auto, auto, auto); }
+    to { clip: rect(0px, auto, auto, auto); }
+}
+@keyframes menu-header {
+    from { clip: rect(1px, auto, auto, auto); }
+    to { clip: rect(0px, auto, auto, auto); }
 }
