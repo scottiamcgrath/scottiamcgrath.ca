@@ -274,6 +274,10 @@ hr {
         margin: auto;
         height: 3.15rem;
     }
+    .under-header {
+        background-color: #6c5671;
+        display: grid;
+    }
     main {
         padding-left: 1rem;
         padding-right: 1rem;
