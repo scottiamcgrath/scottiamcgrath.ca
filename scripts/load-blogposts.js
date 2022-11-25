@@ -12,9 +12,14 @@ function init() {
         p.className = "tag"
         let a = document.createElement("a");
         a.innerHTML =  " " + titles[i] + "<br>";
-        let splitTitle = titles[i].split(":");
-        let date = splitTitle[0];
-        a.href = "/blog/" + date
+        let title = titles[i].replace(":", "");
+        let splitTitle = title.split(" ");
+        let underscoreTitle = "";
+        splitTitle.forEach(word => {
+            underscoreTitle = underscoreTitle + word + "_";
+        });
+        underscoreTitle = underscoreTitle.slice(0, -1);
+        a.href = "/blog/" + underscoreTitle;
         fragment.appendChild(p);
         fragment.appendChild(a);
     }
