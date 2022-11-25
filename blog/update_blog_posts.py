@@ -1,5 +1,5 @@
 """
-A short script I run to read the html of the blogposts I write and update their filenames and the titles in titles.txt.
+A short script I run to read the html of the blogposts I write and format things so the website loads them properly.
 This makes it a lot easier to write new posts and ensures that none of them get lost in the aeither.
 """
 import os
@@ -21,10 +21,13 @@ def make_title(file):
 
 def add_title(titles, title):
     if title != "skip":
+        split_title = title.split("]")
+        translation_table = {ord("-"): " ", ord("["): ": "}
+        legible_title = split_title[0] + split_title[1].translate(translation_table)
         if titles == "":
-            titles = title
+            titles = legible_title
         else:
-            titles = titles + "\n" + title
+            titles = titles + "\n" + legible_title
     return titles
 
 def rename_file(file, title):
