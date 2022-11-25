@@ -12,14 +12,14 @@ function init() {
         p.className = "tag"
         let a = document.createElement("a");
         a.innerHTML =  " " + titles[i] + "<br>";
-        let title = titles[i].replace(":", "");
-        let splitTitle = title.split(" ");
-        let underscoreTitle = "";
+        let splitTitle = titles[i].split(" ");
+        let hyphenTitle = "";
         splitTitle.forEach(word => {
-            underscoreTitle = underscoreTitle + word + "_";
+            hyphenTitle = hyphenTitle + word + "-";
         });
-        underscoreTitle = underscoreTitle.slice(0, -1);
-        a.href = "/blog/" + underscoreTitle;
+        hyphenTitle = hyphenTitle.slice(0, -1);
+        hyphenTitle = hyphenTitle.replace(":-", "][");
+        a.href = "/blog/" + hyphenTitle;
         fragment.appendChild(p);
         fragment.appendChild(a);
     }
