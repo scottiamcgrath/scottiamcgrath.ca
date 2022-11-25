@@ -73,10 +73,34 @@ li {
     margin-bottom: 0.4rem;
 }
 a {
+    color: #0000EE;
     text-decoration: none;
+}
+a:visited {
+    color: #551A8B;
 }
 a:hover {
     text-decoration: underline;
+}
+.searchbar {
+    display: block;
+    margin: 1rem auto 0 auto;
+    width: 75%;
+    font-family: Lexend, Arial, sans-serif;
+    font-size: 100%;
+    border:2px solid #6c5671;
+    outline:none;
+}
+.title {
+    display: none;
+}
+.date {
+    display: none;
+}
+.tag {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    margin-top: 0;
 }
 hr {
     border: 0.1px solid #6c5671;
