@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scottie McGrath</title>
+<link rel="icon" href="/sitewide-resources/icon16.png" type="image/x-icon">
+<link rel="stylesheet" href="/css/standard.css">
+<link rel="stylesheet" href="/css/blog.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        tags: "ams"
+      }
+    };
+</script>
+</script>
+<script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+<body>
+<header id="header">
+</header>
+<nav id="under-header-frame">
+</nav>
+<main id="main-frame" class="main-frame">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="title">Plotting Two Functions With One Equation</p>
+<p class="date">26-11-22</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+    <center>
+        <B>Plotting Two Functions With One Equation</B>
+    </center>
+</p>
+<p>
+    I want to define two functions with a single equation. By that, I mean that if you were to plot the final equation, you would see both of the original curves. This, as far as I'm aware, has no practical use. I just think it's cool. It turns out this is possible under some restrictions.
+</p>
+<p>
+    Take two arbitrary functions $F, G: x \rightarrow y$. We can construct a surface containing both functions. To do this, take the equation for a circle in the $zy$ plane:
+    \begin{equation} 
+        (z-h)^2 + (y-k)^2 = r^2
+    \end{equation}
+    where $h$ is the circle's displacement along the $z$-axis and $k$ is the circle's displacement along the $y$-axis. We can give values of $h$, $k$, and $r$ such that the circle always passes through both functions. For this, $h=0$, $k$ is the average value of both functions $k=\frac{F+G}{2}$, and $r$ is the modulus of half of the difference between the functions $r=\left|{\frac{F-G}{2}}\right|$. Substituting these values of $h$, $k$, and $r$ into equation 1, we have our surface.
+    \begin{equation} 
+        z^2 + \left(y-\frac{F+G}{2}\right)^2 = \left(\left|{\frac{F-G}{2}}\right|\right)^2
+    \end{equation}
+    As our functions $F$ and $G$ are bounded within the $xy$ plane, we are only interested in the solutions where $z=0$. Substituting this value for $z$ into equation 2, we have:
+    \begin{equation} 
+        \left(y-\frac{F+G}{2}\right)^2 = \left(\left|{\frac{F-G}{2}}\right|\right)^2
+    \end{equation}
+    Finally, we can solve equation 3 for $y$ to obtain a general formula for an equation of two functions.
+    \begin{equation} 
+        y = \frac{F+G}{2} \pm \frac{F-G}{2}
+    \end{equation}
+    So that it is easier to refer to later, we can give the $y$ in equation 4 a new symbol.
+    \begin{equation} 
+        Q = \frac{F+G}{2} \pm \frac{F-G}{2}
+    \end{equation}
+    For an example of how this works, we can solve for $Q$ of the functions $F=sinx$ and $G=e^{-x}$. In the below figure, the left plot shows a plot of $F$ and $G$ while the right plot shows a plot of $Q$.
+</p>
+<img class="graph" src="/blog/blog-resources/Q_graphing_F_and_G.svg">
+<p>
+    As you can see, the plots are the same. There are limitations though. The big one is that $F$ and $G$ must be defined on the same domain. In regions where $F$ or $G$ are undefined, $Q$ will also be undefined. Thus, in regions where $F$ is defined and $G$ is not, $Q$ will not reproduce $F$ and visa versa. This is demonstrated in the figure below by plotting $F = 3\frac{sinx}{x}$, $G = +\sqrt{x + 1}$, and the respective $Q$.
+</p>
+<img class="graph" src="/blog/blog-resources/Q_graphing_F_and_G_discontinuities.svg">
+<p>
+    These plots are not the same.
+</p>
+<p>
+    Additionally, $F$ and $G$ must be functions. It's unclear how we would construct the surface we used to derive equation 5 in non-functional cases. As a consequence of this, in the above figure, $G$ was defined $G = +\sqrt{x + 1}$. $G$ was defined as positive because $G = \sqrt{x}$ is not a function.
+</p>
+<p>
+    Another problem is that, $F$ and $G$ must be defined under the same mapping. If we define $F: x \rightarrow y$ and $G: w \rightarrow z$, we need to define how $w, x, y,$ and $z$ relate before we can construct our surface.
+</p>
+<p>
+    Lastly, equation 5 only works for two inputs $F$ and $G$. It would be much cooler to expand this concept to an arbitrary number of inputs.
+</p>
+<p>
+    These are all interesting problems which I may post about in the future.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="/scripts/load-header.js"></script>
+<script src="/scripts/under-header.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</html>
