@@ -102,6 +102,9 @@ a:hover {
     margin-bottom: 0.4rem;
     margin-top: 0;
 }
+.graph {
+    width: 100%;
+}
 hr {
     border: 0.1px solid #6c5671;
 }

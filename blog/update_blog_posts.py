@@ -10,8 +10,8 @@ def make_title(file):
     else:
         fileread = open(file, "r")
         lines = fileread.readlines()
-        post_title_tag = lines[17]
-        date_tag = lines[18]
+        post_title_tag = lines[99]
+        date_tag = lines[100]
         post_title = post_title_tag[17:-5]
         date = date_tag[16:-5]
         translation_table = {ord(" "): "-"}
