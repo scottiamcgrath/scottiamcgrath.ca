@@ -18,7 +18,7 @@ function init() {
             hyphenTitle = hyphenTitle + word + "-";
         });
         hyphenTitle = hyphenTitle.slice(0, -1);
-        hyphenTitle = hyphenTitle.replace(":--", "][");
+        hyphenTitle = hyphenTitle.replace(":-", "][");
         a.href = "/blog/" + hyphenTitle;
         fragment.appendChild(p);
         fragment.appendChild(a);
