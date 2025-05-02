@@ -1,2 +1,2 @@
-# scottiemcgrath.ai
-My website
+# scottiamcgrath.ca
+my website
