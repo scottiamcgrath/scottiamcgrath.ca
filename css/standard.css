@@ -98,10 +98,6 @@ a:hover {
 hr {
     border: 0.1px solid #f4b41b;
 }
-.MathJax_Display, .MJXc-display, .MathJax_SVG_Display {
-    overflow-x: auto;
-    overflow-y: hidden;
-}
 /* Desktops */
 @media only screen and (max-width: 24.249rem) and (min-device-width: 500px) {
     body {
