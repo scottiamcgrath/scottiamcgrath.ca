@@ -1,6 +1,6 @@
 """
 A short script I run to read the html of the blogposts I write and format things so the website loads them properly.
-This makes it a lot easier to write new posts and ensures that none of them get lost in the aeither.
+This makes it a lot easier to write new posts and ensures that none of them get lost in the aether.
 """
 import os
 

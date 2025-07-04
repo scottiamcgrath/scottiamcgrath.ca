@@ -29,7 +29,7 @@ function init() {
 function loadTitlesString() {
     var result = null;
     var xmlHttpRequest = new XMLHttpRequest();
-    xmlHttpRequest.open("GET", "/blog/titles.txt", false);
+    xmlHttpRequest.open("GET", "./blog/titles.txt", false);
     xmlHttpRequest.send();
     if (xmlHttpRequest.status==200) {
       result = xmlHttpRequest.responseText;

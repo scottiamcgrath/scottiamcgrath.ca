@@ -1,25 +1,14 @@
-@font-face {
-    font-family: "Lexend";
-    src: url(/sitewide-resources/Lexend-Regular.ttf) format("truetype");
-    font-weight: normal;
-}
-@font-face {
-    font-family: "Lexend";
-    src: url(/sitewide-resources/Lexend-Bold.ttf) format("truetype");
-    font-weight: bold;
-}
-
 html {
-    font-family: Lexend, Arial, sans-serif;
+    font-family: Ubuntu, Arial, sans-serif;
     font-size: 100%;
     line-height: 135%;
     margin: 0;
     padding: 0;
-    background-color: #28282e;
-    color: rgb(0, 0, 0);
+    background-color: #a93b3b;
+    color: #302c2e;
 }
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #dff6f5;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -30,20 +19,20 @@ body:hover {
     cursor: default;
 }
 header {
-    background-color: #6c5671;
+    background-color: #f4b41b;
 }
 .header-text {
     margin: 0px;
-    color: rgb(255, 255, 255);
+    color: #302c2e;
 }
 button {
-    background-color: #feaae4;
-    font-family: Lexend, Arial, sans-serif;
+    background-color: #a93b3b;
+    font-family: Ubuntu,  Arial, sans-serif;
     font-size: 100%;
-    color: rgb(0, 0, 0);
+    color: #dff6f5;
 }
 .icon-button {
-    background-color: #6c5671;
+    background-color: #f4b41b;
     margin: 0px;
     border: 0px;
     padding: 0px;
@@ -73,11 +62,11 @@ li {
     margin-bottom: 0.4rem;
 }
 a {
-    color: #0000EE;
+    color: #394778;
     text-decoration: none;
 }
 a:visited {
-    color: #551A8B;
+    color: #8e478c;
 }
 a:hover {
     text-decoration: underline;
@@ -86,9 +75,9 @@ a:hover {
     display: block;
     margin: 1rem auto 0 auto;
     width: 75%;
-    font-family: Lexend, Arial, sans-serif;
+    font-family: Ubuntu, Arial, sans-serif;
     font-size: 100%;
-    border:2px solid #6c5671;
+    border:2px solid #f4b41b;
     outline:none;
 }
 .title {
@@ -106,10 +95,10 @@ a:hover {
     width: 100%;
 }
 hr {
-    border: 0.1px solid #6c5671;
+    border: 0.1px solid #f4b41b;
 }
 /* Desktops */
-@media only screen and (max-width: 25.16rem) {
+@media only screen and (max-width: 24.249rem) and (min-device-width: 500px) {
     body {
         width: 100%;
         animation-name: menu-header;
@@ -126,16 +115,18 @@ hr {
         margin-left: 1rem;
     }
     button {
-        border: 0.15rem solid #feaae4;
+        border: 0.15rem solid #a93b3b;
         margin: auto;
         margin-bottom: 0.2rem;
     }
     button:hover {
-        border: 0.15rem solid #fff7a0;
+        background-color: #f4b41b;
+        border: 0.15rem solid #a93b3b;
+        color: #302c2e;
     }
     .menu-button {
         display: block;
-        background-color: #6c5671;
+        background-color: #f4b41b;
         margin: 0px;
         border: 0px;
         padding: 0px;
@@ -158,7 +149,7 @@ hr {
         margin-bottom: 0;
     }
     .under-header {
-        background-color: #6c5671;
+        background-color: #f4b41b;
         display: grid;
     }
     main {
@@ -169,7 +160,7 @@ hr {
         width: 12rem;
     }
 }
-@media only screen and (min-width: 25.16rem) and (max-width: 40.26rem) {
+@media only screen and (min-width: 24.25rem) and (max-width: 39.5349rem) and (min-device-width: 500px) {
     body {
         width: 100%;
         animation-name: normal-header;
@@ -184,16 +175,15 @@ hr {
         grid-template-rows: 1.5rem 1.5rem;
         margin-left: 1rem;
     }
-    .header-text {
-        display: none;
-    }
     button {
-        border: 0.15rem solid #feaae4;
+        border: 0.15rem solid #a93b3b;
         height: 1.5rem;
         margin-bottom: 0.2rem;
     }
     button:hover {
-        border: 0.15rem solid #fff7a0;
+        background-color: #f4b41b;
+        border: 0.15rem solid #a93b3b;
+        color: #302c2e;
     }
     main {
         padding-left: 1rem;
@@ -203,7 +193,7 @@ hr {
         width: 14.67rem;
     }
 }
-@media only screen and (min-width: 40.26rem) and (max-width: 54rem) {
+@media only screen and (min-width: 39.535rem) and (max-width: 58.749rem) and (min-device-width: 500px) {
     body {
         width: 100%;
         animation-name: normal-header;
@@ -219,11 +209,13 @@ hr {
         margin-left: 1rem;
     }
     button {
-        border: 0.15rem solid #feaae4;
+        border: 0.15rem solid #a93b3b;
         height: 1.5rem;
     }
     button:hover {
-        border: 0.15rem solid #fff7a0;
+        background-color: #f4b41b;
+        border: 0.15rem solid #a93b3b;
+        color: #302c2e;
     }
     main {
         padding-left: 1rem;
@@ -233,9 +225,9 @@ hr {
         width: 17.33rem;
     }
 }
-@media only screen and (min-width: 54rem) {
+@media only screen and (min-width: 58.75rem) and (min-device-width: 500px) {
     body {
-        width: 54rem;
+        width: 58.75rem;
         animation-name: normal-header;
     }
     header {
@@ -249,11 +241,13 @@ hr {
         margin-left: 1rem;
     }
     button {
-        border: 0.15rem solid #feaae4;
+        border: 0.15rem solid #a93b3b;
         height: 1.5rem;
     }
     button:hover {
-        border: 0.15rem solid #fff7a0;
+        background-color: #f4b41b;
+        border: 0.15rem solid #a93b3b;
+        color: #302c2e;
     }
     main {
         padding-left: 1rem;
@@ -282,7 +276,7 @@ hr {
     }
     .menu-button {
         display: block;
-        background-color: #6c5671;
+        background-color: #f4b41b;
         margin: 0px;
         border: 0px;
         padding: 0px;
@@ -302,7 +296,7 @@ hr {
         height: 3.15rem;
     }
     .under-header {
-        background-color: #6c5671;
+        background-color: #f4b41b;
         display: grid;
     }
     main {

@@ -11,7 +11,7 @@ function switchUnderHeader() {
         $("#under-header").remove();
     } else {
         active = true;
-        $("#under-header-frame").load("/general-html/under-header.html");
+        $("#under-header-frame").load("./general-html/under-header.html");
     }
 };
 

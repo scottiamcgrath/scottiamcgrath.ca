@@ -1,8 +1,10 @@
 .about-button {
-    background-color: #fff7a0;
-    border: 0.15em solid #fff7a0;
+    background-color: #f4b41b;
+    border: 0.15rem solid #f4b41b;
+    color: #302c2e;
 }
 .under-about-button {
-    background-color: #fff7a0;
-    border: 0.15em solid #fff7a0;
+    background-color: #f4b41b;
+    border: 0.15rem solid #f4b41b;
+    color: #302c2e;
 }
