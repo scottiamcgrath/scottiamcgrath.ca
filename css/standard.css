@@ -260,6 +260,9 @@ hr {
     .menu-button:hover {
         cursor: pointer;
     }
+    button {
+        border: 0.15rem solid #dff6f5;
+    }
     .icon-button {
         margin: auto;
         height: 3.15rem;
