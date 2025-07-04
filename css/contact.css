@@ -3,6 +3,9 @@
     border: 0.15rem solid #f4b41b;
     color: #302c2e;
 }
+.contact-button:hover {
+    border: 0.15rem solid #f4b41b;
+}
 .under-contact-button {
     background-color: #f4b41b;
     border: 0.15rem solid #f4b41b;
