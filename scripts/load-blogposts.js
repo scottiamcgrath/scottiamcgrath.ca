@@ -1,7 +1,49 @@
 document.addEventListener("DOMContentLoaded", init);
 
-
 function init() {
+    const mainFrame = document.getElementById("main-frame");
+    const titlesString = loadTitlesString();
+    const titles = parseTitlesString(titlesString);
+    let fragment = document.createDocumentFragment();
+    for (let i=titles.length-1; i>=0; i--) {
+        let post = document.createElement("a");
+        post.innerHTML =  titles[i] + "<br>";
+        let splitTitle = titles[i].split(" ");
+        let postUrl = "";
+        splitTitle.forEach(word => {
+            postUrl = postUrl + word.toLowerCase() + "_";
+        });
+        postUrl = postUrl.slice(0, -1);
+        post.href = "/blog/" + postUrl;
+        fragment.appendChild(post);
+    }
+    mainFrame.appendChild(fragment);
+}
+
+function loadTitlesString() {
+    var result = null;
+    var xmlHttpRequest = new XMLHttpRequest();
+    xmlHttpRequest.open("GET", "/blog/titles.txt", false);
+    xmlHttpRequest.send();
+    if (xmlHttpRequest.status==200) {
+      result = xmlHttpRequest.responseText;
+    }
+    return result;
+}
+
+function parseTitlesString(string) {
+    let titles = [];
+    let splitString = string.split("\n");
+    splitString.forEach(line => {
+        titles.push(line);
+    });
+    return titles;
+}
+
+
+
+
+/* function init() {
     const mainFrame = document.getElementById("main-frame");
     const titlesString = loadTitlesString();
     const titles = parseTitlesString(titlesString);
@@ -44,4 +86,4 @@ function parseTitlesString(string) {
         titles.push(line);
     });
     return titles;
-}
+} */
