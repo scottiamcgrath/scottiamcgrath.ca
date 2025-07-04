@@ -12,7 +12,8 @@ body {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 60rem;
+    padding-bottom: 100vh;
+    /* padding-bottom: 60rem; */
     animation-duration: 0.001s;
 }
 body:hover {
