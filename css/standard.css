@@ -157,10 +157,10 @@ hr {
         padding-right: 1rem;
     }
     .big-logo {
-        width: 12rem;
+        width: 33.3333333333%;
     }
 }
-@media only screen and (min-width: 24.25rem) and (max-width: 39.5349rem) and (min-device-width: 500px) {
+@media only screen and (min-width: 24.25rem) and (max-width: 58.749rem) and (min-device-width: 500px) {
     body {
         width: 100%;
         animation-name: normal-header;
@@ -190,39 +190,7 @@ hr {
         padding-right: 1rem;
     }
     .big-logo {
-        width: 14.67rem;
-    }
-}
-@media only screen and (min-width: 39.535rem) and (max-width: 58.749rem) and (min-device-width: 500px) {
-    body {
-        width: 100%;
-        animation-name: normal-header;
-    }
-    header {
-        display: grid;
-        grid-template-columns: 3rem 1fr;
-        padding: 0.2rem 1rem;
-    }
-    .header-right {
-        display: grid;
-        grid-template-rows: 1.5rem 1.5rem;
-        margin-left: 1rem;
-    }
-    button {
-        border: 0.15rem solid #a93b3b;
-        height: 1.5rem;
-    }
-    button:hover {
-        background-color: #f4b41b;
-        border: 0.15rem solid #a93b3b;
-        color: #302c2e;
-    }
-    main {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .big-logo {
-        width: 17.33rem;
+        width: 33.3333333333%;
     }
 }
 @media only screen and (min-width: 58.75rem) and (min-device-width: 500px) {
@@ -254,7 +222,7 @@ hr {
         padding-right: 1rem;
     }
     .big-logo {
-        width: 20rem;
+        width: 33.3333333333%;
     }
 }
 /* Phones */
@@ -304,7 +272,7 @@ hr {
         padding-right: 1rem;
     }
     .big-logo {
-        width: 12rem;
+        width: 33.3333333333%;
     }
 }
 @keyframes normal-header {
